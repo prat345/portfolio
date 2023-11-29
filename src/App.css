@@ -1,3 +1,90 @@
+/* RESET */
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 75px;
+}
+body {
+  font-weight: 400;
+  overflow-x: hidden;
+  position: relative;
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  font-family: 'Times New Roman', Times, serif !important;
+}
+h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0;
+  line-height: normal;
+}
+a {
+  text-decoration: none !important;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* NAVBAR */
+nav.navbar{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  z-index: 9999;
+  background-color: #ffffff;
+  transition:  0.32s ease-in-out;
+}
+nav.navbar.scrolled{
+  background-color: #bebebe;
+}
+nav.navbar .navbar-brand {
+  width: 9%;
+}
+nav.navbar .navbar-nav a,
+nav.navbar .navbar-brand {
+  padding: 26px 0;
+  text-align: center;
+}
+nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
+nav.navbar .navbar-nav a.nav-link.navbar-link.active {
+    opacity: 1;
+}
+
+/* BANNER */
+#banner {
+  /* margin-top: 76px; */
+  padding: 200px 0;
+  background-color: antiquewhite;
+}
+/* SKILLS */
+#skill ul{
+  display: flex;
+  list-style-type: none;
+}
+#skill li{
+  width: 50px;
+}
+
+/* PROJECTS */
+#project .col-md-6{
+  /* height: 300px; */
+  margin: auto 0;
+  overflow: hidden;
+}
+
+/* CONTACT */
+#contact {
+  background-color: #bebebe;
+  padding-bottom: 100px;
+}
+
+/* Default */
 .App {
   text-align: center;
 }
