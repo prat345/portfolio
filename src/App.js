@@ -13,7 +13,7 @@ function App() {
     <BrowserRouter>
       <NavBar />
       <Banner />
-      <Education />
+      {/* <Education /> */}
       <Skill />
       <Project />
       <Contact />
