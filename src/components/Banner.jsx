@@ -26,14 +26,10 @@ export default function Banner() {
       <Container>
         <Row>
           <Col md={8} className="my-auto">
-            <h1 className="mb-3">Prat Prasertsup</h1>
+            <h1 className="mb-3 title">Prat Prasertsup</h1>
             <p>
-              Hi, I am a newly graduated engineer who has passion for developing
-              web applications and programming. I have practiced about web
-              development through self learning, online courses and my self
-              projects. I am seekingfor an opportunity to work as a front-end or
-              full-stack developer to create professional websites
-              whiledeveloping new skills and becoming a good team player.
+              Hi, I am a newly graduated engineer who wants to be a Front-end
+              developer.
             </p>
             <p>
               <button className="btn btn-outline-light" onClick={onDownload}>
