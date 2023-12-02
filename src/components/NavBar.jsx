@@ -98,7 +98,7 @@ export default function NavBar() {
                 className="nav-icon"
                 target="_blank"
               >
-                <i class="fa-brands fa-github"></i>
+                <i className="fa-brands fa-github"></i>
               </Link>
             </span>
           </Navbar.Collapse>

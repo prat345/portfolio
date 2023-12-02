@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Col from "react-bootstrap/esm/Col";
 import Row from "react-bootstrap/esm/Row";
+import { v4 as uuid } from "uuid";
 
 const skills = [
   {
@@ -66,7 +67,7 @@ export default function Skill() {
           <Col sm={12} md={8}>
             <ul className="d-flex p-0 justify-content-evenly flex-wrap">
               {skills.map((skill, i) => (
-                <li className="img-sm-container">
+                <li className="img-sm-container" key={uuid()}>
                   <img
                     className="img-small"
                     src={skill.path}

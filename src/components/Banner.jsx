@@ -34,24 +34,30 @@ export default function Banner() {
   }, []);
 
   return (
-    <section id="banner" className={scrolled ? "scrolled" : ""}>
-      <Container>
-        <Row>
-          <Col md={8} className="my-auto">
-            <h1 className="mb-4 title">Prat Prasertsup</h1>
-            <p style={{ maxWidth: "600px" }}>
-              Hi, I am a newly graduated engineer who wants to be a Front-end
-              developer. Passionate in creating functional and visually
-              appealing websites.
-            </p>
-            <p>
-              <button className="btn btn-outline-light" onClick={onDownload}>
-                Download Resume
-              </button>
-            </p>
-          </Col>
-        </Row>
-      </Container>
-    </section>
+    <>
+      <section id="banner" className={scrolled ? "scrolled" : ""}>
+        <Container>
+          <Row>
+            <Col md={8} className="my-auto">
+              <h1 className="mb-4 title">Prat Prasertsup</h1>
+              <p style={{ maxWidth: "600px" }}>
+                Hi, I am a newly graduated engineer who wants to be a Front-end
+                developer. Passionate in creating functional and visually
+                appealing websites.
+              </p>
+              <p>
+                <button className="btn btn-outline-light" onClick={onDownload}>
+                  Download Resume
+                </button>
+              </p>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+      <div className="background">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt,
+        repellat!
+      </div>
+    </>
   );
 }
