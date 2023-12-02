@@ -3,6 +3,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import { Link } from "react-router-dom";
 
 export default function NavBar() {
   const [activeLink, setActiveLink] = useState("home");
@@ -38,7 +39,7 @@ export default function NavBar() {
       >
         <Container>
           <Navbar.Brand href="#home" className="text-start">
-            Prat
+            PRAT
           </Navbar.Brand>
           <Navbar.Toggle
             aria-controls="basic-navbar-nav"
@@ -91,6 +92,15 @@ export default function NavBar() {
                 Contact
               </Nav.Link>
             </Nav>
+            <span className="navbar-text to-hide">
+              <Link
+                to="https://github.com/prat345"
+                className="nav-icon"
+                target="_blank"
+              >
+                <i class="fa-brands fa-github"></i>
+              </Link>
+            </span>
           </Navbar.Collapse>
         </Container>
       </Navbar>

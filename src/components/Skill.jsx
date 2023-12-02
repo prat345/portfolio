@@ -58,26 +58,10 @@ const skills = [
 ];
 
 export default function Skill() {
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const onScroll = () => {
-      setScrolled(false);
-      if (window.scrollY > 150) {
-        setScrolled(true);
-      }
-    };
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
-
   return (
-    <section
-      id="skill"
-      className={scrolled ? "text-center p-4 scrolled" : "text-center p-4"}
-    >
+    <section id="skill" className="text-center p-4">
       <div className="skill-container">
-        <h1 className="mb-3">Skills</h1>
+        <h1 className="mb-4">Skills</h1>
         <Row className="justify-content-center">
           <Col sm={12} md={8}>
             <ul className="d-flex p-0 justify-content-evenly flex-wrap">
