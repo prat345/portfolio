@@ -46,7 +46,7 @@ a {
   text-decoration: none !important;
 }
 a:hover {
-  color: rgb(161, 109, 44) !important;
+  color: rgb(164, 115, 55) !important;
   transition: color 0.2s;
 }
 ul {
@@ -140,7 +140,6 @@ nav.navbar .navbar-text {
   z-index: -1;
 }
 #banner {
-  /* margin-top: 76px; */
   height: 100vh;
   padding: 200px 0;
   background-color: #000000 !important;
@@ -200,7 +199,8 @@ nav.navbar .navbar-text {
   transform: translate(-50%, -50%);
 }
 li.img-sm-container .skill-name {
-  background-color: #e4e4e4;
+  color: #c059ff !important;
+  border: 1px solid #c5c6cd;
   border-radius: 10px;
   font-size: 0.7rem;
   padding: 3px 10px;
@@ -254,7 +254,7 @@ li.img-sm-container:hover .skill-name {
   font-size: 0.7rem;
   padding: 3px 10px;
   color: #c059ff !important;
-  border: 1px solid #c059ff !important;
+  border: 1px solid #c5c6cd !important;
   margin: 0 5px;
 }
 .order-odd {

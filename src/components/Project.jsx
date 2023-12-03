@@ -97,7 +97,7 @@ export default function Projects() {
                   <Card.Body className="text-center">
                     <Card.Title>
                       <Link to={project.demo} target="_blank">
-                        {project.title}
+                        <h5>{project.title}</h5>
                       </Link>
                     </Card.Title>
                     <Card.Text>
