@@ -39,7 +39,7 @@ export default function NavBar() {
       >
         <Container>
           <Navbar.Brand href="#home" className="text-start">
-            PRAT
+            FOOH
           </Navbar.Brand>
           <Navbar.Toggle
             aria-controls="basic-navbar-nav"

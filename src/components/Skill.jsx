@@ -30,11 +30,15 @@ const skills = [
   },
   {
     name: "Express",
-    path: "/images/s10.png",
+    path: "https://adware-technologies.s3.amazonaws.com/uploads/technology/thumbnail/20/express-js.png",
   },
   {
     name: "React",
     path: "/images/s11.png",
+  },
+  {
+    name: "Tailwind",
+    path: "/images/s12.svg",
   },
   {
     name: "MySQL",
@@ -49,10 +53,6 @@ const skills = [
     path: "/images/s7.png",
   },
   {
-    name: "Postman",
-    path: "https://seeklogo.com/images/P/postman-logo-0087CA0D15-seeklogo.com.png",
-  },
-  {
     name: "Figma",
     path: "https://upload.wikimedia.org/wikipedia/commons/a/ad/Figma-1-logo.png?20190122182216",
   },
@@ -60,9 +60,9 @@ const skills = [
 
 export default function Skill() {
   return (
-    <section id="skill" className="text-center p-4">
+    <section id="skill" className="skill text-center">
+      <h1 className="mb-4">Skills</h1>
       <div className="skill-container">
-        <h1 className="mb-4">Skills</h1>
         <Row className="justify-content-center">
           <Col sm={12} md={8}>
             <ul className="d-flex p-0 justify-content-evenly flex-wrap">

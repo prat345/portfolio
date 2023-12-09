@@ -35,7 +35,7 @@ export default function Banner() {
 
   return (
     <>
-      <section id="banner" className={scrolled ? "scrolled" : ""}>
+      <section id="banner" className={scrolled ? "scrolled banner" : "banner"}>
         <Container>
           <Row>
             <Col md={8} className="my-auto">

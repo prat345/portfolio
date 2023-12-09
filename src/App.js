@@ -7,6 +7,7 @@ import Project from "./components/Project";
 import Contact from "./components/Contact";
 import { BrowserRouter } from "react-router-dom";
 import Education from "./components/Education";
+import Sendmail from "./components/Sendmail";
 
 function App() {
   return (

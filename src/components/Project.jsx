@@ -29,9 +29,8 @@ const projects = [
       },
     ],
     description: `An interactive dashboard summarizing data of vehicle testing.
-     Allow users to view the overall or individual test data with interactive charts from plotly,
-     query incident video from filters, record test log and manage data in database.
-      Responsive design and pagination
+     Allow users to view the overall or individual test data,
+     query incident video, record test log and manage data in database.
       `,
     demo: "https://incident-dashboard-clhw.onrender.com/",
     stacks: ["Django", "MongoDB"],
@@ -65,7 +64,7 @@ const projects = [
       },
     ],
     description: `An e-commerce website like Amazon.com.
-    The website has many features similar to those of Amazon. Users can search for items, 
+    Users can search for items, 
     add to cart, create an order, create account, sign in, sign out, make payment, and track order status etc.`,
     demo: "https://amazon-clone-d9pc.onrender.com/",
     stacks: ["Node", "Express", "React", "MongoDB"],
@@ -73,43 +72,47 @@ const projects = [
 ];
 export default function Projects() {
   return (
-    <section id="project">
+    <section className="project" id="project">
       <Container>
         <h1 className="mb-4 text-center">Projects</h1>
         <Row className="d-flex flex-wrap">
           {projects.map((project, i) => {
             return (
-              <Col md={6} className="d-flex">
+              <Col md={6} className="d-flex mb-4" key={i}>
                 <Card>
-                  <Carousel key={uuid()}>
-                    {project.image.map((image, i) => {
-                      return (
-                        <Carousel.Item interval={5000}>
-                          <img
-                            className="d-block w-100"
-                            src={image.imgPath}
-                            alt={image.imgNumber}
-                          />
-                        </Carousel.Item>
-                      );
-                    })}
-                  </Carousel>
-                  <Card.Body className="text-center">
-                    <Card.Title>
-                      <Link to={project.demo} target="_blank">
+                  <Link to={project.demo} target="_blank">
+                    <Carousel key={uuid()}>
+                      {project.image.map((image, i) => {
+                        return (
+                          <Carousel.Item interval={5000} key={i}>
+                            <img
+                              className="d-block w-100"
+                              src={image.imgPath}
+                              alt={image.imgNumber}
+                            />
+                          </Carousel.Item>
+                        );
+                      })}
+                    </Carousel>
+                    <Card.Body className="text-center">
+                      <Card.Title>
                         <h5>{project.title}</h5>
-                      </Link>
-                    </Card.Title>
-                    <Card.Text>
-                      <p>{project.description}</p>
-                      <p>
-                        {" "}
-                        {project.stacks.map((stack) => {
-                          return <span className="stack-name">{stack}</span>;
-                        })}
-                      </p>
-                    </Card.Text>
-                  </Card.Body>
+                      </Card.Title>
+                      <Card.Text>
+                        <p>{project.description}</p>
+                        <p>
+                          {" "}
+                          {project.stacks.map((stack) => {
+                            return (
+                              <span className="stack-name" key={uuid()}>
+                                {stack}
+                              </span>
+                            );
+                          })}
+                        </p>
+                      </Card.Text>
+                    </Card.Body>
+                  </Link>
                 </Card>
               </Col>
             );
