@@ -263,9 +263,6 @@ li.img-sm-container:hover .skill-name {
   color: #fff !important;
 }
 
-.carousel-item {
-  max-height: 260px;
-}
 .project .card {
   border: none;
   border-radius: 10px;
@@ -286,6 +283,27 @@ li.img-sm-container:hover .skill-name {
   color: #a507f4 !important;
   border: 1px solid #c5c6cd !important;
   margin: 0 5px;
+}
+.carousel-item {
+  max-height: 260px;
+}
+@media (max-width: 576px) {
+  .carousel-item {
+    max-height: 240px;
+  }
+}
+@media (max-width: 400px) {
+  .carousel-item {
+    max-height: 200px;
+  }
+  .card p:last-child {
+    margin: 8px;
+  }
+}
+@media (max-width: 350px) {
+  .carousel-item {
+    max-height: 170px;
+  }
 }
 .order-odd {
   order: 6;

@@ -76,7 +76,7 @@ export default function Projects() {
         <Row className="d-flex flex-wrap">
           {projects.map((project, i) => {
             return (
-              <Col md={6} className="d-flex mb-4" key={i}>
+              <Col lg={6} className="d-flex mb-4" key={i}>
                 <Card>
                   <Carousel key={uuid()}>
                     {project.image.map((image, i) => {
@@ -93,7 +93,7 @@ export default function Projects() {
                   </Carousel>
                   <Card.Body className="text-center">
                     <Card.Title>
-                      <h5>{project.title}</h5>
+                      <h5 className="mb-3">{project.title}</h5>
                     </Card.Title>
                     <Card.Text>
                       {/* <p>{project.description}</p> */}
