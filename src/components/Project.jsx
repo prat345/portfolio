@@ -33,6 +33,7 @@ const projects = [
      query incident video, record test log and manage data in database.
       `,
     demo: "https://incident-dashboard-clhw.onrender.com/",
+    github: "https://github.com/prat345/senior-project-django",
     stacks: ["Django", "MongoDB"],
   },
   {
@@ -58,15 +59,12 @@ const projects = [
         imgNumber: "5",
         imgPath: "/images/p2-5.png",
       },
-      {
-        imgNumber: "6",
-        imgPath: "/images/p2-6.png",
-      },
     ],
     description: `An e-commerce website like Amazon.com.
     Users can search for items, 
     add to cart, create an order, create account, sign in, sign out, make payment, and track order status etc.`,
     demo: "https://amazon-clone-d9pc.onrender.com/",
+    github: "https://github.com/prat345/amazon-clone",
     stacks: ["Node", "Express", "React", "MongoDB"],
   },
 ];
@@ -80,39 +78,53 @@ export default function Projects() {
             return (
               <Col md={6} className="d-flex mb-4" key={i}>
                 <Card>
-                  <Link to={project.demo} target="_blank">
-                    <Carousel key={uuid()}>
-                      {project.image.map((image, i) => {
-                        return (
-                          <Carousel.Item interval={5000} key={i}>
-                            <img
-                              className="d-block w-100"
-                              src={image.imgPath}
-                              alt={image.imgNumber}
-                            />
-                          </Carousel.Item>
-                        );
-                      })}
-                    </Carousel>
-                    <Card.Body className="text-center">
-                      <Card.Title>
-                        <h5>{project.title}</h5>
-                      </Card.Title>
-                      <Card.Text>
-                        <p>{project.description}</p>
-                        <p>
-                          {" "}
-                          {project.stacks.map((stack) => {
+                  <Carousel key={uuid()}>
+                    {project.image.map((image, i) => {
+                      return (
+                        <Carousel.Item interval={5000} key={i}>
+                          <img
+                            className="d-block w-100"
+                            src={image.imgPath}
+                            alt={image.imgNumber}
+                          />
+                        </Carousel.Item>
+                      );
+                    })}
+                  </Carousel>
+                  <Card.Body className="text-center">
+                    <Card.Title>
+                      <h5>{project.title}</h5>
+                    </Card.Title>
+                    <Card.Text>
+                      {/* <p>{project.description}</p> */}
+                      <p className="d-flex justify-content-center">
+                        {" "}
+                        {/* {project.stacks.map((stack) => {
                             return (
                               <span className="stack-name" key={uuid()}>
                                 {stack}
                               </span>
                             );
-                          })}
-                        </p>
-                      </Card.Text>
-                    </Card.Body>
-                  </Link>
+                          })} */}
+                        <Link
+                          type="button"
+                          className="btn btn-warning mx-2"
+                          target="_blank"
+                          to={project.github}
+                        >
+                          Github
+                        </Link>
+                        <Link
+                          type="button"
+                          className="btn btn-outline-primary mx-2"
+                          target="_blank"
+                          to={project.demo}
+                        >
+                          Live Demo
+                        </Link>
+                      </p>
+                    </Card.Text>
+                  </Card.Body>
                 </Card>
               </Col>
             );

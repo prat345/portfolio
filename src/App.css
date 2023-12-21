@@ -60,7 +60,19 @@ img {
   max-width: 100%;
   max-height: 100%;
 }
+.btn-warning,
+.btn-warning:hover {
+  color: #000 !important;
+}
 
+.btn-outline-primary {
+  color: #a507f4 !important;
+  border-color: #a507f4 !important;
+}
+.btn-outline-primary:hover {
+  background-color: #a507f4 !important;
+  color: #fff !important;
+}
 @media (max-width: 992px) {
   * {
     font-size: 15px;
@@ -199,8 +211,8 @@ nav.navbar .navbar-text {
   transform: translate(-50%, -50%);
 }
 li.img-sm-container .skill-name {
-  color: #d288ff !important;
-  border: 1px solid #c5c6cd;
+  color: #a507f4 !important;
+  border: 1px solid #c5c6cd66;
   border-radius: 10px;
   font-size: 0.7rem;
   padding: 3px 10px;
@@ -243,12 +255,12 @@ li.img-sm-container:hover .skill-name {
   color: #dcdcdc;
 }
 .project .card-title h5 {
-  color: #d288ff !important;
+  color: #fff !important;
 }
-/* .project .card-title h5:hover {
-  color: rgb(161, 109, 44) !important;
-  transition: color 0.2s;
-} */
+
+.carousel-item {
+  max-height: 260px;
+}
 .project .card {
   border: none;
   border-radius: 10px;
@@ -266,7 +278,7 @@ li.img-sm-container:hover .skill-name {
   border-radius: 10px;
   font-size: 0.7rem;
   padding: 3px 10px;
-  color: #d288ff !important;
+  color: #a507f4 !important;
   border: 1px solid #c5c6cd !important;
   margin: 0 5px;
 }
