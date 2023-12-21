@@ -173,6 +173,11 @@ nav.navbar .navbar-text {
 .title {
   font-size: 60px;
 }
+@media (max-width: 576px) {
+  .title {
+    font-size: 40px;
+  }
+}
 /* SKILLS */
 .skill {
   padding: 100px !important;
