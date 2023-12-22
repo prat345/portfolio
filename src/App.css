@@ -282,35 +282,7 @@ li.img-sm-container:hover .skill-name {
   border: 1px solid #c5c6cd !important;
   margin: 0 5px;
 }
-.carousel-item {
-  max-height: 260px;
-}
-@media (max-width: 576px) {
-  .carousel-item {
-    max-height: 240px;
-  }
-}
-@media (max-width: 400px) {
-  .carousel-item {
-    max-height: 200px;
-  }
-  .card p:last-child {
-    margin: 8px;
-  }
-}
-@media (max-width: 350px) {
-  .carousel-item {
-    max-height: 170px;
-  }
-}
-.order-odd {
-  order: 6;
-}
-@media (max-width: 768px) {
-  .order-odd {
-    order: -1;
-  }
-}
+
 /* CONTACT */
 .contact {
   background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
