@@ -27,6 +27,7 @@ function Sendmail() {
   };
   return (
     <div className="container send-mail">
+      <h1>Contact</h1>
       <form ref={form} onSubmit={sendEmail}>
         <div className="form-group mb-3">
           <label>Name</label>

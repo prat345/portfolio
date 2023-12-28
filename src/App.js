@@ -8,6 +8,7 @@ import Contact from "./components/Contact";
 import { BrowserRouter } from "react-router-dom";
 import Education from "./components/Education";
 import Sendmail from "./components/Sendmail";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Skill />
       <Project />
       <Contact />
+      <Footer />
     </BrowserRouter>
   );
 }

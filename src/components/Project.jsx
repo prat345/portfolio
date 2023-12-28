@@ -6,68 +6,8 @@ import Card from "react-bootstrap/Card";
 import { Link } from "react-router-dom";
 import Carousel from "react-bootstrap/Carousel";
 import { v4 as uuid } from "uuid";
+import { projects } from "../data.js";
 
-const projects = [
-  {
-    title: "Dashboard for Autonomous Vehicle Testing",
-    image: [
-      {
-        imgNumber: "1",
-        imgPath: "/images/p1-1.png",
-      },
-      {
-        imgNumber: "2",
-        imgPath: "/images/p1-2.png",
-      },
-      {
-        imgNumber: "3",
-        imgPath: "/images/p1-3.png",
-      },
-      {
-        imgNumber: "4",
-        imgPath: "/images/p1-4.png",
-      },
-    ],
-    description: `An interactive dashboard summarizing data of vehicle testing.
-     Allow users to view the overall or individual test data,
-     query incident video, record test log and manage data in database.
-      `,
-    demo: "https://incident-dashboard-clhw.onrender.com/",
-    github: "https://github.com/prat345/senior-project-django",
-    stacks: ["Django", "MongoDB"],
-  },
-  {
-    title: "Amazon Clone MERN-Stack",
-    image: [
-      {
-        imgNumber: "1",
-        imgPath: "/images/p2-1.png",
-      },
-      {
-        imgNumber: "2",
-        imgPath: "/images/p2-2.png",
-      },
-      {
-        imgNumber: "3",
-        imgPath: "/images/p2-3.png",
-      },
-      {
-        imgNumber: "4",
-        imgPath: "/images/p2-4.png",
-      },
-      {
-        imgNumber: "5",
-        imgPath: "/images/p2-5.png",
-      },
-    ],
-    description: `An e-commerce website like Amazon.com.
-    Users can search for items, 
-    add to cart, create an order, create account, sign in, sign out, make payment, and track order status etc.`,
-    demo: "https://amazon-clone-d9pc.onrender.com/",
-    github: "https://github.com/prat345/amazon-clone",
-    stacks: ["Node", "Express", "React", "MongoDB"],
-  },
-];
 export default function Projects() {
   return (
     <section className="project" id="project">

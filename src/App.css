@@ -1,16 +1,16 @@
 @font-face {
   font-family: Centra;
-  src: url("../public/fonts/CentraNo2-Bold.ttf");
+  src: url("./assets/fonts/CentraNo2-Bold.ttf");
   font-weight: 700;
 }
 @font-face {
   font-family: Centra;
-  src: url("../public/fonts/CentraNo2-Medium.ttf");
+  src: url("./assets/fonts/CentraNo2-Medium.ttf");
   font-weight: 500;
 }
 @font-face {
   font-family: Centra;
-  src: url("../public/fonts/CentraNo2-Book.ttf");
+  src: url("./assets/fonts/CentraNo2-Book.ttf");
   font-weight: 400;
 }
 
@@ -155,7 +155,7 @@ nav.navbar .navbar-text {
   padding: 200px 0;
   background-color: #000000 !important;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../public/images/background.png");
+    url("./assets/images/background.png");
   background-size: cover;
   background-repeat: no-repeat;
   color: #ffffff;
@@ -178,19 +178,15 @@ nav.navbar .navbar-text {
 }
 /* SKILLS */
 .skill {
-  padding: 100px !important;
-  margin-bottom: 50px;
+  padding: 120px !important;
 }
 
 .skill .skill-container {
-  background-color: #2d2d2d;
-  border-radius: 30px;
-  padding: 50px 20px 20px 20px;
-  /* box-shadow: 3px 3px 5px #191919; */
+  padding: 20px;
 }
 @media (max-width: 992px) {
   .skill {
-    padding: 50px 20px !important;
+    padding: 100px 20px !important;
   }
 }
 .skill ul {
@@ -248,11 +244,14 @@ li.img-sm-container:hover .skill-name {
 
 /* PROJECTS */
 .project {
-  padding: 20px 0 !important;
-  margin-bottom: 100px;
+  padding: 100px 0 !important;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("./assets/images/banner-bg.png");
+  background-attachment: fixed;
+  background-size: cover;
 }
 .project .card {
-  background: #2d2d2d;
+  background: #222222;
 }
 .project .card * {
   color: #dcdcdc;
@@ -265,13 +264,12 @@ li.img-sm-container:hover .skill-name {
   border: none;
   border-radius: 10px;
   overflow: hidden;
-  /* box-shadow: 3px 3px 8px #c0c0c0; */
-  margin-bottom: 20px;
+  margin: 10px;
 }
 .project .card:hover {
   outline: 2px solid #acacac;
   box-shadow: none;
-  background-color: #1d1d1d;
+  background-color: #22222269;
   transition: all 0.2s ease;
 }
 .project .stack-name {
@@ -286,21 +284,10 @@ li.img-sm-container:hover .skill-name {
 /* CONTACT */
 .contact {
   background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
-  padding-bottom: 50px;
-  padding-top: 30px;
+  padding: 50px 0;
 }
 .contact * {
   color: #ffffff;
-}
-.contact ul li {
-  margin: 20px 0;
-  display: flex;
-  align-items: baseline;
-}
-.contact ul li i {
-  display: inline-block;
-  width: 20px;
-  margin-right: 0.5rem;
 }
 .send-mail form input,
 .send-mail form textarea {
@@ -309,4 +296,35 @@ li.img-sm-container:hover .skill-name {
 }
 .send-mail form p:last-child {
   position: absolute;
+}
+
+/* FOOTER */
+footer {
+  padding: 20px 100px;
+  color: #d9d9d9;
+}
+footer ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media (max-width: 992px) {
+  footer ul {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+footer ul li {
+  margin: 0.5rem 0;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+footer ul li:hover {
+  color: #fff;
+}
+footer ul li i {
+  display: inline-block;
+  width: 20px;
+  margin-right: 0.5rem;
 }

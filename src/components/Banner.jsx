@@ -2,11 +2,12 @@ import React, { useEffect, useState } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import resume from "../assets/files/resume.pdf";
 
 export default function Banner() {
   const [scrolled, setScrolled] = useState(false);
   const onDownload = () => {
-    fetch("/files/resume.pdf")
+    fetch(resume)
       .then((response) => {
         response.blob().then((blob) => {
           // Creating new object of PDF file
