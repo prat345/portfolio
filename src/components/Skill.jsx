@@ -10,7 +10,7 @@ export default function Skill() {
       <h1>Skills</h1>
       <div className="skill-container">
         <Row className="justify-content-center">
-          <Col sm={12} md={8}>
+          <Col sm={12} lg={8}>
             <ul className="d-flex p-0 justify-content-evenly flex-wrap">
               {skills.map((skill, i) => (
                 <li className="img-sm-container" key={uuid()}>

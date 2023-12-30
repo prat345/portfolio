@@ -132,7 +132,7 @@ const projects = [
     description: `An e-commerce website like Amazon.com.
     Users can search for items, 
     add to cart, create an order, create account, sign in, sign out, make payment, and track order status etc.`,
-    demo: "https://amazon-clone-d9pc.onrender.com/",
+    demo: "https://amason-clone.vercel.app",
     github: "https://github.com/prat345/amazon-clone",
     stacks: ["Node", "Express", "React", "MongoDB"],
   },

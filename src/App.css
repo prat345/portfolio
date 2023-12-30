@@ -286,9 +286,6 @@ li.img-sm-container:hover .skill-name {
   background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
   padding: 50px 0;
 }
-.contact * {
-  color: #ffffff;
-}
 .send-mail form input,
 .send-mail form textarea {
   background-color: #ffffff33 !important;
