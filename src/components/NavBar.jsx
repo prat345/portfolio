@@ -92,7 +92,7 @@ export default function NavBar() {
                 Contact
               </Nav.Link>
             </Nav>
-            <span className="navbar-text to-hide">
+            <div className="navbar-text icon-container">
               <Link
                 to="https://github.com/prat345"
                 className="nav-icon"
@@ -100,7 +100,7 @@ export default function NavBar() {
               >
                 <i className="fa-brands fa-github"></i>
               </Link>
-            </span>
+            </div>
           </Navbar.Collapse>
         </Container>
       </Navbar>

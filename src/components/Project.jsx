@@ -32,11 +32,11 @@ export default function Projects() {
                     })}
                   </Carousel>
                   <Card.Body className="text-center">
-                    <Card.Title>
+                    <Card.Title className="m-0">
                       <h5 className="mb-3">{project.title}</h5>
                     </Card.Title>
                     <Card.Text>
-                      {/* <p>{project.description}</p> */}
+                      {/* <p className="text-small font-italic">{project.type}</p> */}
                       <p className="d-flex justify-content-center">
                         {" "}
                         {/* {project.stacks.map((stack) => {

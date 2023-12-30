@@ -101,6 +101,7 @@ const projects = [
      Allow users to view the overall or individual test data,
      query incident video, record test log and manage data in database.
       `,
+    type: "final project",
     demo: "https://incident-dashboard-clhw.onrender.com/",
     github: "https://github.com/prat345/senior-project-django",
     stacks: ["Django", "MongoDB"],
@@ -132,6 +133,7 @@ const projects = [
     description: `An e-commerce website like Amazon.com.
     Users can search for items, 
     add to cart, create an order, create account, sign in, sign out, make payment, and track order status etc.`,
+    type: "personal project",
     demo: "https://amason-clone.vercel.app",
     github: "https://github.com/prat345/amazon-clone",
     stacks: ["Node", "Express", "React", "MongoDB"],

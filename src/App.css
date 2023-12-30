@@ -58,17 +58,20 @@ img {
   width: 100%;
   height: auto;
 }
+.text-small {
+  font-size: 14px;
+}
 .btn-warning,
 .btn-warning:hover {
   color: #000 !important;
 }
 
 .btn-outline-primary {
-  color: #a507f4 !important;
-  border-color: #a507f4 !important;
+  color: #d385ff !important;
+  border-color: #d385ff !important;
 }
 .btn-outline-primary:hover {
-  background-color: #a507f4 !important;
+  background-color: #d385ff !important;
   color: #fff !important;
 }
 @media (max-width: 992px) {
@@ -121,8 +124,10 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   opacity: 1;
 }
 nav.navbar .navbar-text {
+  padding-left: 15px;
+}
+nav.navbar .navbar-text i {
   font-size: 30px;
-  padding-left: 10px;
 }
 
 @media (max-width: 992px) {
@@ -130,13 +135,16 @@ nav.navbar .navbar-text {
     border: none !important;
   }
   nav.navbar .navbar-nav a.nav-link.navbar-link:hover {
-    background-color: #54545480;
+    box-shadow: rgba(206, 206, 206, 0.35) 0px -30px 36px -28px inset;
   }
   nav.navbar .navbar-nav a.nav-link.navbar-link.active {
     text-decoration: underline !important;
+    box-shadow: rgba(206, 206, 206, 0.35) 0px -30px 36px -28px inset;
   }
-  nav.navbar .navbar-text.to-hide {
-    display: none;
+  nav.navbar .navbar-text {
+    text-align: center;
+    padding: 15px 0;
+    margin-bottom: 10px;
   }
 }
 
@@ -210,7 +218,7 @@ nav.navbar .navbar-text {
   transform: translate(-50%, -50%);
 }
 li.img-sm-container .skill-name {
-  color: #a507f4 !important;
+  color: #d385ff !important;
   border: 1px solid #c5c6cd66;
   border-radius: 10px;
   font-size: 0.7rem;
@@ -254,10 +262,10 @@ li.img-sm-container:hover .skill-name {
   background: #222222;
 }
 .project .card * {
-  color: #dcdcdc;
+  color: #ededed;
 }
 .project .card-title h5 {
-  color: #fff !important;
+  color: #d385ff !important;
 }
 
 .project .card {
@@ -276,7 +284,7 @@ li.img-sm-container:hover .skill-name {
   border-radius: 10px;
   font-size: 0.7rem;
   padding: 3px 10px;
-  color: #a507f4 !important;
+  color: #d385ff !important;
   border: 1px solid #c5c6cd !important;
   margin: 0 5px;
 }
