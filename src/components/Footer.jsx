@@ -3,7 +3,7 @@ import { v4 as uuid } from "uuid";
 
 export default function Footer() {
   return (
-    <footer>
+    <footer className="container">
       <ul>
         <li key={uuid()}>
           <i className="fa-solid fa-phone"></i>
